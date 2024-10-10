@@ -14,11 +14,10 @@ code {
 }
 
 .album-container {
-  background-color: orange;
+  background-color: black;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
   gap: 10px;
-  border: solid, red;
 }
 
 .album-card {
@@ -40,7 +39,6 @@ code {
   width: 280px;
   height: 280px;
   overflow: hidden;
-  border: solid, red;
 }
 
 .cover-image-img {
@@ -55,11 +53,8 @@ code {
   z-index: 1;
   position: absolute;
   width: 300px;
-  top: 10px;
   /* opacity: 0; */
-  top: 20%;
   gap: 10px;
-  border: solid, orange;
 }
 
 .heart-icon,
@@ -87,7 +82,7 @@ code {
 h2 {
   padding: 5px;
   margin: 5px;
-  border: solid, red;
+  font-size: 18px;
 }
 
 p {
