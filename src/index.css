@@ -37,6 +37,10 @@ code {
   position: relative;
 }
 
+:hover.cover-image-container {
+  filter: brightness(40%);
+}
+
 .cover-image {
   width: 280px;
   height: 280px;
@@ -52,20 +56,30 @@ code {
 .icon-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   z-index: 1;
   position: absolute;
   top: 120px;
   width: 300px;
   /* opacity: 0; */
-  gap: 10px;
-  border: solid, green;
+  gap: 20px;
+  height: 100px;
+  width: 100%;
 }
 
 .heart-icon,
 .play-icon,
 .dots-icon {
-  width: 40px;
+  width: 30px;
   filter: invert(100%)
+}
+
+.play-icon {
+  width: 40px;
+}
+
+:hover.play-icon {
+  width: 60px;
 }
 
 .heart-button,
