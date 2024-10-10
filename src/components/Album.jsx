@@ -2,6 +2,9 @@ import { albums } from "../data.json"
 import { AlbumName } from "./AlbumName"
 import { ArtistName } from "./ArtistName"
 import { CoverImage } from "./CoverImage"
+import { DotsButton } from "./DotsButton"
+import { HeartButton } from "./HeartButton"
+import { PlayButton } from "./PlayButton"
 
 // Album
 export const Album = () => {
@@ -11,6 +14,11 @@ export const Album = () => {
             {albums.items.map((album) => (
                 <div key={album.id} className="album-card">
                     <CoverImage coverImg={album.images.length > 0 ? album.images[0].url : 'fallback-image-url.jpg'} />
+                    <div className="icon-container">
+                        <HeartButton />
+                        <PlayButton />
+                        <DotsButton />
+                    </div>
 
                     <div className="album-info">
                         <AlbumName name={album.name} />
@@ -19,7 +27,8 @@ export const Album = () => {
                     </div>
 
                 </div>
-            ))}
-        </div>
+            ))
+            }
+        </div >
     )
 }

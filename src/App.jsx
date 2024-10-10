@@ -4,8 +4,8 @@ import { Album } from "./components/Album"
 console.log(data);
 
 export const App = () => {
-  return (
-    <>
-      <Album />
-    </>)
+    return (
+        <>
+            <Album />
+        </>)
 };
