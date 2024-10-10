@@ -33,6 +33,7 @@ code {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .cover-image {
@@ -52,6 +53,7 @@ code {
   justify-content: center;
   z-index: 1;
   position: absolute;
+  top: 120px;
   width: 300px;
   /* opacity: 0; */
   gap: 10px;
@@ -60,7 +62,7 @@ code {
 .heart-icon,
 .play-icon,
 .dots-icon {
-  width: 30px;
+  width: 40px;
   filter: invert(100%)
 }
 
