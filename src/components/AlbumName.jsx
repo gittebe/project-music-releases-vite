@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 
 // Album Name
 export const AlbumName = ({ name }) => {
@@ -7,3 +8,8 @@ export const AlbumName = ({ name }) => {
         </div>
     )
 }
+
+// Define PropTypes for AlbumName
+AlbumName.propTypes = {
+    name: PropTypes.string.isRequired,
+};

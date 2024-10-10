@@ -23,12 +23,17 @@ code {
 
 .album-card {
   display: flex;
+  flex-direction: column;
   background-color: black;
   max-width: 300px;
   height: 300px;
   color: white;
 }
 
-album-name {
-  color: aliceblue;
+.cover-image-container {
+  width: 100%;
+}
+
+.cover-image {
+  width: 100%;
 }
