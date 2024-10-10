@@ -26,4 +26,9 @@ code {
   background-color: black;
   max-width: 300px;
   height: 300px;
+  color: white;
+}
+
+album-name {
+  color: aliceblue;
 }
