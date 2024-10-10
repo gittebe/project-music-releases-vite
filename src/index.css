@@ -27,6 +27,7 @@ code {
   max-width: 300px;
   color: white;
   padding: 5px;
+  position: relative;
 }
 
 .cover-image-container {
