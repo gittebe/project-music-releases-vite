@@ -26,14 +26,71 @@ code {
   flex-direction: column;
   background-color: black;
   max-width: 300px;
-  height: 300px;
   color: white;
+  padding: 5px;
 }
 
 .cover-image-container {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .cover-image {
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  border: solid, red;
+}
+
+.cover-image-img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+  width: 300px;
+  top: 10px;
+  /* opacity: 0; */
+  top: 20%;
+  gap: 10px;
+  border: solid, orange;
+}
+
+.heart-icon,
+.play-icon,
+.dots-icon {
+  width: 30px;
+  filter: invert(100%)
+}
+
+.heart-button,
+.play-button,
+.dots-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+h2 {
+  padding: 5px;
+  margin: 5px;
+  border: solid, red;
+}
+
+p {
+  padding: 5px;
+  margin: 5px;
 }
