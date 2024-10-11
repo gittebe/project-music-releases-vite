@@ -91,7 +91,7 @@ code {
   position: relative
 }
 
-.album-card:hover .cover-image-container {
+.cover-image-container:hover .cover-image {
   filter: brightness(30%)
 }
 

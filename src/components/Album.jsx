@@ -2,9 +2,6 @@ import { albums } from "../data.json"
 import { AlbumName } from "./AlbumName"
 import { ArtistName } from "./ArtistName"
 import { CoverImage } from "./CoverImage"
-import { DotsButton } from "./DotsButton"
-import { HeartButton } from "./HeartButton"
-import { PlayButton } from "./PlayButton"
 
 // Album
 export const Album = () => {
@@ -13,17 +10,11 @@ export const Album = () => {
             {/* iterating over the album and rendering one card for each album */}
             {albums.items.map((album) => (
                 <div key={album.id} className="album-card">
-                    <CoverImage coverImg={album.images.length > 0 ? album.images[0].url : 'fallback-image-url.jpg'} />
-                    <div className="icon-container">
-                        <HeartButton />
-                        <PlayButton />
-                        <DotsButton />
-                    </div>
-
+                    <CoverImage coverImg={album.images.length > 0 ? album.images[0].url : 'fallback-image-url.jpg'}
+                        albumUrl={album.external_urls.spotify} />
                     <div className="album-info">
                         <AlbumName name={album.name} />
                         <ArtistName artists={album.artists} />
-                        {/* <a href={album.external_urls.spotify} target="_blank" rel="noopener noreferrer">Listen</a> */}
                     </div>
 
                 </div>
@@ -32,3 +23,15 @@ export const Album = () => {
         </div >
     )
 }
+
+
+
+{/* <div className="cover-image-container">
+                        <Image /> */}
+{/* <CoverImage coverImg={album.images.length > 0 ? album.images[0].url : 'fallback-image-url.jpg'} />
+                        <div className="icon-container">
+                            <HeartButton />
+                            <PlayButton />
+                            <DotsButton />
+                        </div> */}
+{/* </div> */ }
