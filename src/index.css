@@ -37,10 +37,6 @@ code {
   position: relative;
 }
 
-:hover.cover-image-container {
-  filter: brightness(40%);
-}
-
 .cover-image {
   width: 280px;
   height: 280px;
@@ -57,30 +53,34 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 0;
   position: absolute;
   top: 120px;
   width: 300px;
-  /* opacity: 0; */
-  gap: 20px;
+  opacity: 0;
+  gap: 10px;
   height: 100px;
   width: 100%;
+}
+
+.play-button-container {
+  display: flex;
+  justify-content: center;
+  width: 80px;
 }
 
 .heart-icon,
 .play-icon,
 .dots-icon {
   width: 30px;
-  filter: invert(100%)
+  filter: invert(100%);
+  z-index: 5;
 }
 
 .play-icon {
-  width: 40px;
+  width: 50px;
 }
 
-:hover.play-icon {
-  width: 60px;
-}
 
 .heart-button,
 .play-button,
@@ -89,6 +89,18 @@ code {
   background-color: transparent;
   cursor: pointer;
   position: relative
+}
+
+.album-card:hover .cover-image-container {
+  filter: brightness(30%)
+}
+
+.album-card:hover .icon-container {
+  opacity: 1;
+}
+
+.play-icon:hover {
+  width: 70px;
 }
 
 .album-info {
