@@ -24,7 +24,7 @@ code {
   display: flex;
   flex-direction: column;
   background-color: black;
-  max-width: 300px;
+  min-width: 300px;
   color: white;
   padding: 5px;
   position: relative;
@@ -38,8 +38,8 @@ code {
 }
 
 .cover-image {
-  width: 280px;
-  height: 280px;
+  width: 100%;
+
   overflow: hidden;
 }
 
