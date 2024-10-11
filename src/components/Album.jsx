@@ -13,25 +13,12 @@ export const Album = () => {
                     <CoverImage coverImg={album.images.length > 0 ? album.images[0].url : 'fallback-image-url.jpg'}
                         albumUrl={album.external_urls.spotify} />
                     <div className="album-info">
-                        <AlbumName name={album.name} />
-                        <ArtistName artists={album.artists} />
+                        <AlbumName name={album.name} albumUrl={album.external_urls.spotify} />
+                        <ArtistName artists={album.artists} artistsUrl={album.external_urls.spotify} />
                     </div>
-
                 </div>
             ))
             }
         </div >
     )
 }
-
-
-
-{/* <div className="cover-image-container">
-                        <Image /> */}
-{/* <CoverImage coverImg={album.images.length > 0 ? album.images[0].url : 'fallback-image-url.jpg'} />
-                        <div className="icon-container">
-                            <HeartButton />
-                            <PlayButton />
-                            <DotsButton />
-                        </div> */}
-{/* </div> */ }

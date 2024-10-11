@@ -3,15 +3,17 @@ import PropTypes from 'prop-types'
 // Album Name
 export const AlbumName = ({ name, albumUrl }) => {
     return (
-        <a
-            href={albumUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className='album-url'>
-            <h2 className="album-name">{name}</h2>
-        </a>
+        <div>
+            <a
+                href={albumUrl}
+                target="_blank"
+                rel="noopener noreferrer">
+                <h2 className="album-name">{name}</h2>
+            </a>
+        </div>
     )
 }
+
 
 // Define PropTypes for AlbumName
 AlbumName.propTypes = {
