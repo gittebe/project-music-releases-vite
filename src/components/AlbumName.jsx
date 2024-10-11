@@ -7,7 +7,8 @@ export const AlbumName = ({ name, albumUrl }) => {
             <a
                 href={albumUrl}
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+                className='album-name-a'>
                 <h2 className="album-name">{name}</h2>
             </a>
         </div>
