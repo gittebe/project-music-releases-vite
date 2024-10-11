@@ -91,13 +91,15 @@ code {
   position: relative
 }
 
+/* hover effects */
+
 .album-card:hover .cover-image {
   filter: brightness(30%)
 }
 
 .album-card:hover .icon-container {
   opacity: 1;
-  filter: brightness(70%);
+  filter: brightness(100%);
 }
 
 .album-info {
