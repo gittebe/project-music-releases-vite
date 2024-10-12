@@ -13,6 +13,17 @@ code {
     monospace;
 }
 
+header {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: greenyellow;
+
+}
+
 .album-container {
   background-color: black;
   display: grid;
@@ -39,8 +50,8 @@ code {
 
 .cover-image {
   width: 100%;
-
   overflow: hidden;
+  padding: 15px;
 }
 
 .cover-image-img {
@@ -74,7 +85,7 @@ code {
 .dots-icon {
   width: 30px;
   filter: invert(100%);
-  z-index: 5;
+  /* z-index: 5; */
 }
 
 .play-icon {
@@ -91,33 +102,15 @@ code {
   position: relative
 }
 
-/* hover effects */
-
-.album-card:hover .cover-image {
-  filter: brightness(30%)
-}
-
-.album-card:hover .icon-container {
-  opacity: 1;
-  filter: brightness(100%);
-}
-
 .album-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.play-button:hover .play-icon {
-  width: 70px;
-  filter: invert(100%);
-  transition: all 0.3s ease;
-}
-
 .artists-container {
   display: flex;
 }
-
 
 .artist-name,
 .album-name {
@@ -125,6 +118,7 @@ code {
   margin: 2px;
   color: white;
   text-decoration: none;
+  font-size: medium;
 }
 
 .artist-name {
@@ -145,4 +139,20 @@ code {
 .artist-name-a:hover,
 .album-name-a:hover {
   text-decoration: underline;
+}
+
+/* hover effects */
+
+.album-card:hover .cover-image-container .cover-image-img {
+  filter: brightness(30%);
+}
+
+.album-card:hover .icon-container {
+  opacity: 1;
+}
+
+.play-button:hover .play-icon {
+  width: 70px;
+  filter: invert(100%);
+  transition: all 0.3s ease;
 }
