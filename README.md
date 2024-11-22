@@ -23,7 +23,7 @@ PropTypes: For type-checking component props to ensure the correct data is passe
 Spotify API: To fetch album data (album details, cover images, artist names, etc.).
 CSS: Custom styling to match the given design, ensuring that the album cards, play buttons, and sidebar look cohesive and visually appealing.
 
-Challenges & Solutions:
+# Challenges & Solutions
 Design Consistency: One of the main challenges in this project was adhering to the design specifications provided. To address this, I followed a structured approach:
 
 I built reusable components to maintain consistency in the layout and UI elements (e.g., album card components, play button, sidebar components).
