@@ -21,7 +21,6 @@ header {
 
 h1 {
   color: greenyellow;
-
 }
 
 .main-container {
@@ -39,7 +38,6 @@ h1 {
 .sidebar {
   display: none;
 }
-
 
 .album-card {
   display: flex;
@@ -95,13 +93,11 @@ h1 {
 .dots-icon {
   width: 30px;
   filter: invert(100%);
-  /* z-index: 5; */
 }
 
 .play-icon {
   width: 50px;
 }
-
 
 .heart-button,
 .play-button,
@@ -157,7 +153,6 @@ h1 {
 }
 
 /* hover effects */
-
 .album-card:hover .cover-image-container .cover-image-img {
   filter: brightness(30%);
 }
@@ -171,8 +166,6 @@ h1 {
   filter: invert(100%);
   transition: all 0.3s ease;
 }
-
-
 
 @media (min-width: 1024px) {
   .main-container {
@@ -216,5 +209,4 @@ h1 {
   .cover-image-sidebar-img {
     width: 100%;
   }
-
 }

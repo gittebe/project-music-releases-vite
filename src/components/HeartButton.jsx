@@ -1,4 +1,4 @@
-import heartIcon from "../assets/icons/heart.svg"
+import heartIcon from "../assets/icons/heart.svg";
 
 export const HeartButton = () => {
   return (

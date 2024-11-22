@@ -1,5 +1,5 @@
-import { playlists } from "../stretch-goal.json"
-import { SidebarAlbum } from "./SidebarAlbum"
+import { playlists } from "../stretch-goal.json";
+import { SidebarAlbum } from "./SidebarAlbum";
 
 export const Sidebar = () => {
   return (
@@ -9,7 +9,7 @@ export const Sidebar = () => {
         {playlists.items.map((item) => (
           <SidebarAlbum
             key={item.id}
-            sidebarImg={item.images.length > 0 ? item.images[0].url : 'fallback-image-url.jpg'}
+            sidebarImg={item.images.length > 0 ? item.images[0].url : "fallback-image-url.jpg"}
           />
         ))}
       </div>

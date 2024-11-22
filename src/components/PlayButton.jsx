@@ -1,5 +1,5 @@
-import playIcon from "../assets/icons/play.svg"
-import PropTypes from "prop-types"
+import playIcon from "../assets/icons/play.svg";
+import PropTypes from "prop-types";
 
 export const PlayButton = ({ albumUrl }) => {
   const handlePlayClick = () => {

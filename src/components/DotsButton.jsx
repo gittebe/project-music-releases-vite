@@ -1,4 +1,4 @@
-import dotsIcon from "../assets/icons/dots.svg"
+import dotsIcon from "../assets/icons/dots.svg";
 
 export const DotsButton = () => {
   return (

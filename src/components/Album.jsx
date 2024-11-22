@@ -1,9 +1,9 @@
-import { albums } from "../data.json"
-import { AlbumName } from "./AlbumName"
-import { ArtistName } from "./ArtistName"
-import { CoverImage } from "./CoverImage"
-import { Header } from "./Header"
-import { Sidebar } from "./Sidebar"
+import { albums } from "../data.json";
+import { AlbumName } from "./AlbumName";
+import { ArtistName } from "./ArtistName";
+import { CoverImage } from "./CoverImage";
+import { Header } from "./Header";
+import { Sidebar } from "./Sidebar";
 
 // Album
 export const Album = () => {
@@ -15,7 +15,7 @@ export const Album = () => {
           {albums.items.map((album) => (
             <div key={album.id} className="album-card">
               <CoverImage
-                coverImg={album.images.length > 0 ? album.images[0].url : 'fallback-image-url.jpg'}
+                coverImg={album.images.length > 0 ? album.images[0].url : "fallback-image-url.jpg"}
                 albumUrl={album.external_urls.spotify}
               />
               <div className="album-info">

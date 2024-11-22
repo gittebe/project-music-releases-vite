@@ -1,7 +1,7 @@
-import PropTypes from "prop-types"
-import { DotsButton } from "./DotsButton"
-import { HeartButton } from "./HeartButton"
-import { PlayButton } from "./PlayButton"
+import PropTypes from "prop-types";
+import { DotsButton } from "./DotsButton";
+import { HeartButton } from "./HeartButton";
+import { PlayButton } from "./PlayButton";
 
 export const CoverImage = ({ coverImg, albumUrl }) => {
   return (
@@ -14,7 +14,6 @@ export const CoverImage = ({ coverImg, albumUrl }) => {
           <DotsButton />
         </div>
       </div>
-
     </div>
   )
 }
@@ -23,4 +22,3 @@ CoverImage.propTypes = {
   coverImg: PropTypes.string.isRequired,
   albumUrl: PropTypes.string.isRequired,
 }
-
